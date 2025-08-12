@@ -4,21 +4,21 @@
 > ```
 > -----BEGIN PGP PUBLIC KEY BLOCK-----
 >
-mDMEaJqOexYJKwYBBAHaRw8BAQdAu5c2nH9Hh14oAVPy3aWsORPwEq6WV5zS3BeA
-dsVeLfG0N1phY2sgUHVobCAoQ3JPd1MuZGV2IEJsb2cgU2lnbmluZyBLZXkpIDx6
-cHVobEB4bWl0Lnh5ej6IkwQTFgoAOxYhBPa8Wj6Mt/4VYhDZPzGsp8b92V1uBQJo
-mo57AhsDBQsJCAcCAiICBhUKCQgLAgQWAgMBAh4HAheAAAoJEDGsp8b92V1uWUEB
-AIll3RxkZvHEEL1Sa6UkU56/+aj8USjpuAd3jzBViecSAP4rz2PULdrw5W8pvcIF
-20CAiECFLsu/eXjsdl8yMz07A7g4BGiajnsSCisGAQQBl1UBBQEBB0DErlmrsSAj
-xqvReQZ2V8c4HXdIN1Y4Y521MX+k4M86UQMBCAeIeAQYFgoAIBYhBPa8Wj6Mt/4V
-YhDZPzGsp8b92V1uBQJomo57AhsMAAoJEDGsp8b92V1uuNkA/1B79QcW8T/CDy+6
-eUoeK579aZktBx0v9bLj0sAPAuHtAQD2nk9dHaW2E9kJyefEA2GouSsD05SLma5g
-oi2KHdOlBw==
-=Z06W
------END PGP PUBLIC KEY BLOCK-----
+> mDMEaJqOexYJKwYBBAHaRw8BAQdAu5c2nH9Hh14oAVPy3aWsORPwEq6WV5zS3BeA
+> dsVeLfG0N1phY2sgUHVobCAoQ3JPd1MuZGV2IEJsb2cgU2lnbmluZyBLZXkpIDx6
+> cHVobEB4bWl0Lnh5ej6IkwQTFgoAOxYhBPa8Wj6Mt/4VYhDZPzGsp8b92V1uBQJo
+> mo57AhsDBQsJCAcCAiICBhUKCQgLAgQWAgMBAh4HAheAAAoJEDGsp8b92V1uWUEB
+> AIll3RxkZvHEEL1Sa6UkU56/+aj8USjpuAd3jzBViecSAP4rz2PULdrw5W8pvcIF
+> 20CAiECFLsu/eXjsdl8yMz07A7g4BGiajnsSCisGAQQBl1UBBQEBB0DErlmrsSAj
+> xqvReQZ2V8c4HXdIN1Y4Y521MX+k4M86UQMBCAeIeAQYFgoAIBYhBPa8Wj6Mt/4V
+> YhDZPzGsp8b92V1uBQJomo57AhsMAAoJEDGsp8b92V1uuNkA/1B79QcW8T/CDy+6
+> eUoeK579aZktBx0v9bLj0sAPAuHtAQD2nk9dHaW2E9kJyefEA2GouSsD05SLma5g
+> oi2KHdOlBw==
+> =Z06W
+> -----END PGP PUBLIC KEY BLOCK-----
 > ```
-> 
-Articles are always signed over the [underlying markdown](https://github.com/NotsoanoNimus/crows-dev-blog) from the ==first non-whitespace character after the posted signature== to and including the ==final non-whitespace character==.
+>
+> Articles are always signed over the [underlying markdown](https://github.com/NotsoanoNimus/crows-dev-blog) from the ==first non-whitespace character after the posted signature== to and including the ==final non-whitespace character==.
 >
 > Note that this home page isn't signed because the content is expected to change semi-frequently.
 
