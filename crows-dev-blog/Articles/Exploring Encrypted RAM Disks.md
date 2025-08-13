@@ -1,4 +1,4 @@
-##### {{date: MMMM Do, YYYY, [ca.] HH:00 ZZ}}
+#####  August 13th, 2025, ca. 10:00 -0400
 ## Today's Topics: WHAT_I_WORKED_ON_TODAY
 > [!info]- Article PGP Signature
 >

@@ -1,8 +1,10 @@
 ![[media/home_page_banner.png]]
 
-> [!info]- My Public PGP Key
+> [!info]- Open for PGP Information
 > ```
 > -----BEGIN PGP PUBLIC KEY BLOCK-----
+> Comment: F6BC 5A3E 8CB7 FE15 6210  D93F 31AC A7C6 FDD9 5D6E
+> Comment: Zack Puhl (CrOwS.dev Blog Signing Key) <zpuhl@xmit.xyz>
 >
 > mDMEaJqOexYJKwYBBAHaRw8BAQdAu5c2nH9Hh14oAVPy3aWsORPwEq6WV5zS3BeA
 > dsVeLfG0N1phY2sgUHVobCAoQ3JPd1MuZGV2IEJsb2cgU2lnbmluZyBLZXkpIDx6
@@ -17,8 +19,14 @@
 > =Z06W
 > -----END PGP PUBLIC KEY BLOCK-----
 > ```
+> > [!tip] Don't Blindly Trust the Credential Above!
+> > If this is your first time importing my blog's public key, you should check multiple places across the net where I have published it - including my primary site, social networking platforms, public PGP key services (like [openpgp](https://keys.openpgp.org/search?q=zpuhl@xmit.xyz) or [Ubuntu keyserver](https://keyserver.ubuntu.com/pks/lookup?search=zpuhl%40xmit.xyz&fingerprint=on&op=index)), and more - before assuming the above key is legitimate and has not been tampered with.
+> > 
+> > This key is your **only way** to prove the legitimacy of any source code, information, etc. that I publish on this blog.
 >
 > Articles are always signed over the [underlying markdown](https://github.com/NotsoanoNimus/crows-dev-blog) from the ==first non-whitespace character after the posted signature== to and including the ==final non-whitespace character==.
+> 
+> See my [[Verifying Detached PGP Digital Signatures|brief PGP usage guide]] if you're not familiar with PGP.
 >
 > Note that this home page isn't signed because the content is expected to change semi-frequently.
 
@@ -51,6 +59,7 @@ With the help of some paid tooling, a la Obsidian Publish, I'm finally able to g
 - C3: An Evolution of C
   - This language is incredibly fun and is new; thus I contribute often.
 - CSPAuthD: Crude Single Packet Authorization Daemon
+- Nanofuzz: A tiny, fast, regex-based text generator for fuzzing
 - FlexIC: A CAN-based Flexible, Customizable Instrument Cluster display
 ```
 #### Contact

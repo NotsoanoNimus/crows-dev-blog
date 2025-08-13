@@ -2,60 +2,21 @@
 ## Active Projects: this site, [xmit.xyz](https://xmit.xyz/), and [uefi.c3l](https://github.com/NotsoanoNimus/uefi.c3l)
 > [!info]- Article PGP Signature
 >
-> To verify this signature, use the public key on the [[Hello, World!|Home Page]].
+> To verify this signature, use the public key on the [[Hello, World!|Home Page]] and follow the instructions linked there.
 >
+> > [!warning] Updated Signature Timestamp
+> > In order to significantly shorten my signature blocks, I've opted to create _detached signatures_ instead of compressing and using entire articles. I should have done this to begin with.
+> > 
+> > This means the timestamp within this signature may not exactly match the article date, but it will verify.
+> 
 > ```
-> -----BEGIN PGP MESSAGE-----
->
-> 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
-> nHjh4cNvfrz1vZcfvP2Tkw+OvfnhZ5fnW0v/Aw==
-> =Up5X
-> -----END PGP MESSAGE-----
+> -----BEGIN PGP SIGNATURE-----
+> 
+> iHUEABYKAB0WIQT2vFo+jLf+FWIQ2T8xrKfG/dldbgUCaJydVAAKCRAxrKfG/dld
+> bmhgAP0fQj4CzLYCJaW0tUBuQs4fcHPK4d+JS7r3TeZKZg/khAD/a65EUHGsnvHz
+> Edy8VGAKsRY3PRqAe9z3n8BsczZY+ws=
+> =D2cY
+> -----END PGP SIGNATURE-----
 > ```
 
 ### UEFI Project
