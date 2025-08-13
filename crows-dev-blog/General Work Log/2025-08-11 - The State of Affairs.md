@@ -1,4 +1,4 @@
-##### August 11, 2025 ca. 20:00 EDT
+##### August 11, 2025 ca. 20:00 -0400
 ## Active Projects: This Site & the [C3 stdlib](https://github.com/c3lang/c3c)
 > [!info]- Article PGP Signature
 >

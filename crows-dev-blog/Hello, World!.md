@@ -22,26 +22,39 @@
 >
 > Note that this home page isn't signed because the content is expected to change semi-frequently.
 
-My name is Zack P. Welcome to [CrOwS.dev](https://crows.dev/): my personal developer log, mental dumping ground, and loose portfolio of sorts.
+My name is ==Zack Puhl==. I am a systems software engineer from the United States  with a background in cybersecurity and network administration. I have a lot of fun in my free time over [on my GitHub](https://github.com/NotsoanoNimus), and I've created this space to talk about whatever I'm up to.
+
+If you didn't land here through my [main site](https://xmit.xyz/), please check that out too!
+
+## Welcome
+
+Welcome to [CrOwS.dev](https://crows.dev/): my personal developer log, mental dumping ground, and loose portfolio of sorts. Content goes here that spills over from my primary site, where my more formal research and CVEs are published and maintained.
 
 My plan for this site is to:
-- Get these ideas out of my head!
+- Harbor my ideas that I may or may not ever get to.
+- Log regular development activities and challenges (only those ***not*** related to my day-job).
 - Categorize and explain my many different rotating projects, and document my experience working on them individually.
+- Dicuss any published security research findings or curiosities.
 - Maintain a regularly-updated developer log for my own custom operating system, [CrOwS](https://github.com/NotsoanoNimus/CrOwS) and its related tooling.
 
 I'm not sure how long I'm going to keep something like this up, but for a few months I've been very interested in getting a _dev blog_ up and running. Having this will be just the thing I need to keep me on track for certain deadlines and side projects.
 
 With the help of some paid tooling, a la Obsidian Publish, I'm finally able to get things off the ground without worrying about constant hassle with my own webserver and content publishing.
 
-I have a few key projects I'm currently working on:
+### Current Endeavors
 ```
 - CrOwS: The Cryptography and Ownership System
   - A toy OS for cryptography and systems security enthusiasts
-- MFTAH: The CrOwS bootloader
+- MFTAH: Media For Tamper-Averse Humans; the CrOwS bootloader
   - Encrypts and signs a CrOwS (and any other bootable payload) system.
   - Obviously, it also launches these payloads at boot-time.
 - C3: An Evolution of C
-  - This language is incredible; thus I contribute often.
+  - This language is incredibly fun and is new; thus I contribute often.
 - CSPAuthD: Crude Single Packet Authorization Daemon
 - FlexIC: A CAN-based Flexible, Customizable Instrument Cluster display
 ```
+#### Contact
+
+**Question? Suggestion? Bug? \[Query\]?**
+
+Contact me directly [via email](mailto:crows@xmit.xyz), or find me on [LinkedIn](https://linkedin.com/in/xmit-xyz/).
