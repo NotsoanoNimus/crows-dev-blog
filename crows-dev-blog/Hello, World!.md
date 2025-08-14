@@ -1,3 +1,8 @@
+---
+title: Welcome to CrOwS.dev!
+permalink: home
+publish: true
+---
 ![[media/home_page_banner.png]]
 
 > [!info]- Open for PGP Information

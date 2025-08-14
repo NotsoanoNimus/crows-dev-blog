@@ -1,3 +1,14 @@
+---
+tags:
+  - c3
+  - uefi
+  - web
+  - housekeeping
+  - language-development
+title: 2025-08-12 - @weak sauce and UEFI woes
+permalink: work/2025-08-12
+publish: true
+---
 ##### August 11, 2025 ca. 20:00 -0400
 ## Active Projects: This Site & the [C3 stdlib](https://github.com/c3lang/c3c)
 > [!info]- Article PGP Signature

@@ -1,3 +1,14 @@
+---
+tags:
+  - c3
+  - uefi
+  - web
+  - osdev
+  - language-development
+title: 2025-08-12 - @weak sauce and UEFI woes
+permalink: work/2025-08-12
+publish: true
+---
 #####  August 12th, 2025, ca. 14:00 -0400
 ## Active Projects: this site, [xmit.xyz](https://xmit.xyz/), and [uefi.c3l](https://github.com/NotsoanoNimus/uefi.c3l)
 > [!info]- Article PGP Signature
