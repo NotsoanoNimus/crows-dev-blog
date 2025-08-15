@@ -1,3 +1,10 @@
+---
+tags:
+  - TAGS
+title: {{date}} - TITLE
+permalink: work/{{date}}
+publish: false
+---
 ##### {{date: MMMM Do, YYYY, [ca.] HH:00 ZZ}}
 ## Today's Topics: WHAT_I_WORKED_ON_TODAY
 > [!info]- Article PGP Signature

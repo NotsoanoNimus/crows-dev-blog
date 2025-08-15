@@ -1,12 +1,11 @@
 ---
 tags:
   - c3
-  - uefi
   - web
   - housekeeping
   - language-development
-title: 2025-08-12 - @weak sauce and UEFI woes
-permalink: work/2025-08-12
+title: 2025-08-11 - The Status of Affairs
+permalink: work/2025-08-11
 publish: true
 ---
 ##### August 11, 2025 ca. 20:00 -0400
