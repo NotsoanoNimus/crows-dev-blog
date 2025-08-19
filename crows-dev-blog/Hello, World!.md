@@ -55,20 +55,22 @@ I'm not sure how long I'm going to keep something like this up, but for a few mo
 With the help of some paid tooling, a la Obsidian Publish, I'm finally able to get things off the ground without worrying about constant hassle with my own webserver and content publishing.
 
 ### Current Endeavors
+This list changes semi-regularly depending on what's in-queue and what has entered its "maintenance" phase.
 ```
 - CrOwS: The Cryptography and Ownership System
   - A toy OS for cryptography and systems security enthusiasts
 - MFTAH: Media For Tamper-Averse Humans; the CrOwS bootloader
-  - Encrypts and signs a CrOwS (and any other bootable payload) system.
-  - Obviously, it also launches these payloads at boot-time.
+  - Encrypts and signs bootable system images
+  - Launches these payloads at boot-time
 - C3: An Evolution of C
-  - This language is incredibly fun and is new; thus I contribute often.
+  - This language is incredibly fun and is new; thus I contribute often
 - CSPAuthD: Crude Single Packet Authorization Daemon
 - Nanofuzz: A tiny, fast, regex-based text generator for fuzzing
 - FlexIC: A CAN-based Flexible, Customizable Instrument Cluster display
+- hookshot: An anonymous-only FTP scanner and scraper
 ```
 #### Contact
 
-**Question? Suggestion? Bug? \[Query\]?**
+**Question? Suggestion? Bug? Collaboration? \[Query\]?**
 
 Contact me directly [via email](mailto:crows@xmit.xyz), or find me on [LinkedIn](https://linkedin.com/in/xmit-xyz/).

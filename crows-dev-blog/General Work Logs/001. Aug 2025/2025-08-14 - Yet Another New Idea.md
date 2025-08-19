@@ -10,7 +10,7 @@ permalink: work/2025-08-14
 publish: true
 ---
 #####  August 14th, 2025, ca. 22:00 -0400
-## Today's Topics: Merging & an Idea
+## Today's Topics: C-based `a5hash` & a "New" Idea
 > [!info]- Article PGP Signature
 >
 > To verify this signature, use the public key on the [[Hello, World!|Home Page]] and follow the instructions linked there.

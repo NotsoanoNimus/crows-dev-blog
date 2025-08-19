@@ -3,6 +3,7 @@ tags:
   - c3
   - uefi
   - language-development
+  - standard-library
 title: 2025-08-13 - Delicate Balancing Acts
 permalink: work/2025-08-13
 publish: true
