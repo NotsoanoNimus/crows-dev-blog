@@ -7,8 +7,6 @@ title: 2025-08-18 - @reduce and @filter
 permalink: work/2025-08-18
 publish: true
 ---
-#####  August 18th, 2025, ca. 22:00 -0400
-## Today's Topics: Array `@reduce` and `@filter`
 > [!info]- Article PGP Signature
 >
 > To verify this signature, use the public key on the [[Hello, World!|Home Page]] and follow the instructions linked there.
@@ -16,15 +14,23 @@ publish: true
 > ```
 > -----BEGIN PGP SIGNATURE-----
 > 
-> iHUEABYKAB0WIQT2vFo+jLf+FWIQ2T8xrKfG/dldbgUCaKPwXAAKCRAxrKfG/dld
-> biFIAQC8EDKWlMtSIEKf9G57rWXdczDAg0eboqLA3SjbVXijtgEAtAPSY6G0CxTm
-> JAHNs2hxWmDC7DwZZU6l+R/GTHgcigg=
-> =Tq0z
+> iHUEABYKAB0WIQT2vFo+jLf+FWIQ2T8xrKfG/dldbgUCaKYSCwAKCRAxrKfG/dld
+> btS9AQC5/xdGjMI/q1cNFLaOYGE9Hi115vPW1I1hIWRXTN+QFAEApjKyQqOsv+81
+> KKKIHXxZsRyu+BQHTFKjiXRJ5xNclAY=
+> =2iAe
 > -----END PGP SIGNATURE-----
 > ```
 >
 
-### Today's Contributions
+> [!warning]- Article Errata & Update
+> 
+> <u>_EDIT_ (August 20th, 2025, around 1300 EDT)</u>: I've very minorly updated some of this articles contents for correctness, but kept the original date on it. It has been moved below this warning, along with the "Today's Topics" header, so that all of it (and this warning callout) can be included in the article's PGP signature.
+
+#####  August 18th, 2025, ca. 22:00 -0400
+## Today's Topics: Array `@reduce` and `@filter`
+
+---
+### Contributions
 - PR: [c3lang#2419](https://github.com/c3lang/c3c/pull/2419)
 - Issue: [c3lang#2418](https://github.com/c3lang/c3c/issues/2418)
 
@@ -35,20 +41,34 @@ Today's work was the culmination of a branch I've been toying with in the backgr
 
 Without further ado, let's talk about the main points of the [PR](https://github.com/c3lang/c3c/pull/2419).
 
+---
 ##### `@reduce` and Friends
-The `reduce` function, sometimes known as an array-based `accumulator` or `folding` operation, is used to iterate through an input array and _reduce_ its inputs down into a single, ==accumulated== value. Notice that "accumulated" is highlighted; this is important, because often in the nomenclature, the accumulator is also called the ==identity== value.
+The `reduce` function, sometimes known as an array-based `accumulator` or `folding` operation, is used to iterate through an input array and _reduce_ its inputs down into a single, ==accumulated== value. Notice that "accumulated" is highlighted; this is important, because in the related nomenclature the accumulator is often also called the ==identity== value.
 
-To see what it means to reduce, consider the mathematical function:
+To see an example of what it means to reduce, consider the mathematical function:
 $$
 \begin{eqnarray}
 x = k + \sum_{i=0}^{n-1} a_i
- = \overbrace{a_0 + a_1 + \cdots + a_{n-1}}^{a}
+ = k + \overbrace{a_0 + a_1 + \cdots + a_{n-1}}^{a}
 \end{eqnarray}
 $$
 
-Honestly, it looks fancy just because I like writing it out, but all it's saying is "sum up all the values in the input array ***a***, add whatever the initial ***k*** value is, and assign that to ***x***", where ***x*** is the result of the reduction and ***k*** is an initial "accumulator" (or identity) value.
+Honestly, it looks fancy just because I like writing it out, but all it's saying is "sum up all the values in the input array ***a***, add whatever the initial ***k*** value is, and assign that to ***x***", where ***x*** is the result of the reduction and ***k*** is an initial "accumulator" (or identity) value. In this example, the "sum" function _is_ the reduction function.
 
 In this manner, we've ==reduced== all array values down to one from its constituent parts, by summing each value.
+
+A more appropriate mathematical example for `reduce` when the operation is $x \oplus y$ (an `XOR` function) could be:
+$$
+\begin{array}
+\\\text{Define }reduce(f, seed, (a_0, a_1, \ldots, a_{n-1})) \text{ where} \\
+f(x,y)=x\oplus y,\space a_n \text{ is a 0-indexed input array of }n\text{ elements, and }{x}\text{ is set to an initial }seed\text{ value} \\
+\\
+\text{Thus... }reduce(f, 178, a) = f_{n-1}(f_{n-2}(\ldots f_1(f_0(178, a_0), a_1),\ldots, a_{n-2}), a_{n-1}) \\
+\text{is then }= 178 \oplus a_0 \oplus a_1 \oplus \ldots \oplus a_{n-2} \oplus a_{n-1}
+\end{array}
+$$
+
+In short, using `XOR`, reduce the initial seed `178` down to a final value apply `XOR`ing each array element to it, effectively accumulating the `XOR` operations in sequence.
 
 > [!example] `@reduce` in Action
 > 
@@ -72,10 +92,10 @@ In this manner, we've ==reduced== all array values down to one from its constitu
 > Note that this isn't your ordinary `@sum` macro, even though that was added. This is because the lambda is using the `math::ceil` function to round up on each debit to the bank account; something that `@sum` will not do on its own.
 
 The `@reduce` function also offers some pretty cool and optional "summary operators" which I've built into the stdlib call. If the `#operation` (lambda) is a string type, it will be checked against a table at compile-time. Here are a few summary operators that I added in:
-- `"+"`: of course, as a "sum" operator.
-- `"^"`: a chaining XOR operator for each array element.
-- `"&~"`: a series of anti-masking operations.
-- `"count_positive"`: counts how many numeric inputs are positive values.
+- `+`: of course, as a "sum" operator.
+- `^`: a chaining XOR operator for each array element.
+- `&~`: a series of anti-masking operations.
+- `count_positive"`: counts how many numeric inputs are positive values.
 - ... and quite a few more.
 
 These are used in the following way:
@@ -88,6 +108,7 @@ Now `without_flags` will be equal to `initial_flags & ~unset_flags[0] & ~unset_f
 
 Easy!
 
+---
 ##### `@filter` and Such
 The `@filter`, `@any` and `@all` functions are so-called "predicate" based functions which can use a truth statement to filter out or analyze elements across the range of the input array.
 - `@filter` returns a shallow-copy array of each input array element matching -- i.e., returning `true` when input through -- the `#predicate` function.
@@ -123,11 +144,12 @@ The `@filter`, `@any` and `@all` functions are so-called "predicate" based funct
 
 These are just a few quick examples of the many, many possibilities for these array-based macros in the C3 standard library. I really hope to see them used in the future!
 
+---
 ### Fun with compile-time lambdas
 The [issue with the compiler](https://github.com/c3lang/c3c/issues/2418) that I discovered today resulted in a failure of the compiler's awareness of function pointers underlying compile-time constants. If you read over the issue, you'll see that triggering it is based on whether the `$func` constant is being assigned to the given `#operation` expression:
 > [!faq] Problematic Code
 > 
-> Simple uncomment `// = #operation;` to fix the compiler assertion. `$func` is a null function pointer and obviously cannot be applied with `identity` and `element` at compile-time if it doesn't point to anything.
+> Simply uncomment `// = #operation;` to fix the compiler assertion. `$func` is a null function pointer and obviously cannot be applied with `identity` and `element` at compile-time if it doesn't point to anything.
 > 
 > ```swift
 > import std::io;
@@ -155,6 +177,7 @@ The [issue with the compiler](https://github.com/c3lang/c3c/issues/2418) that I 
 
 In typical C3 fashion, this bug was fixed (not by me) _only about 2 hours_ after it was submitted. ==Lightning speed!==
 
+---
 ### Summary
 Today I was really hoping to get some more work done with my UEFI code. After a brief chat with some community members, it seems I'll need to dig a bit further into trying to link the resulting EFI binary with `c3c` instead of calling out to `clang` and `lld-link` at the end of the C3 artifact compilation step.
 
