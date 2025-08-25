@@ -17,7 +17,7 @@ publish: true
 > iHUEABYKAB0WIQT2vFo+jLf+FWIQ2T8xrKfG/dldbgUCaKaNtAAKCRAxrKfG/dld
 > bsSMAQD2D8to6j3RGt3or/G3FU1l6/0tYe6vR4HRec9CN+FzowD/e6CI6yb/mhWz
 > Ux/kUpffhRo+vuPoyuGlS3HHtwSq1A0=
-> SSSSSS=XyMD
+> =XyMD
 > -----END PGP SIGNATURE-----
 > ```
 >
